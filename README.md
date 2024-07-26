@@ -14,19 +14,24 @@ Follow these steps to set up the project.
 
 ### Setup
 
+1. **Clone the repository:**
 
-1. **Copy configuration files:**
+    ```bash
+    git clone ...
+    ```
+
+2. **Copy configuration files:**
 
     ```bash
     cp docker-compose.yaml.dist docker-compose.yaml
     cp .env.example .env
     ```
 
-2. **Configure environment variables:**
+3. **Configure environment variables:**
 
    Open the `.env` file and set the necessary environment variables if required. The `.env` file is used for any environment-specific configurations.
 
-3. **Set permissions for directories:**
+4. **Set permissions for directories:**
 
    Ensure the necessary permissions are set for directories to avoid any issues related to file access:
 
@@ -34,12 +39,12 @@ Follow these steps to set up the project.
     chmod -R 755 
     ```
 
-4. **Build and run the containers:**
+5. **Build and run the containers:**
 
     ```bash
     docker-compose up --build -d
     ```
 
-5. **Access the application:**
+6. **Access the application:**
 
    The React application will be available at [http://localhost:3000](http://localhost:3000). You can open this URL in your web browser to view the application.
