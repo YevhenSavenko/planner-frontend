@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  react-app:
+    build:
+      context: .
+      target: develop
+      args:
+        DOCKER_USER_ID: ${DOCKER_USER_ID}
+        DOCKER_GROUP_ID: ${DOCKER_GROUP_ID}
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
