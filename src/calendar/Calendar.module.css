@@ -1,0 +1,9 @@
+.calendar {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+
+  width: 90vw;
+  height: 100vh;
+}
